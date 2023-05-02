@@ -1,13 +1,13 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import jsLogo from '../assets/js-logo.png'
 
-function Card() {
+
+function Card({icon,name}) {
   return (
    <Container>
-    <img src={jsLogo} alt="" />
-    <h4>JavaScript</h4>
+    <img src={icon} alt="" />
+    <h4>{name}</h4>
    </Container>
   )
 }
@@ -19,13 +19,19 @@ const Container=styled.div`
 background-color:#000034;
 border-radius:10px;
 width:190px;
-height:150px;
+height:130px;
 display: flex;
 flex-direction: column;
 align-items: center;
 padding-top:20px;
 font-size: 18px;
 font-family:Arial, Helvetica, sans-serif;
+img{
+width:55px;
+height: 55px;
+
+
+}
 
     
 `

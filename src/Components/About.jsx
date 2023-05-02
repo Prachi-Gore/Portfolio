@@ -9,12 +9,16 @@ function About() {
         <Top>
 
         <img src="https://img.icons8.com/glyph-neue/45/null/user-female-circle.png"/>
-        <span color='black'>About </span>
-        <span style={{color:"#000080"}}> Me</span>
+        <h1 color='black'>About </h1>
+        <h1 style={{color:"#000080"}}> Me</h1>
         </Top>
         <SubContainer>
         <Left>
+          <div>
+          <span>🙏🏻</span>
+          
           <img src={profilePic} alt="" />
+          </div>
         </Left>
         <Right>
             <h2>I'm Prachi</h2>
@@ -25,11 +29,11 @@ function About() {
             <p style={{fontFamily:"sans-serif"}} ><span style={{color:"blue",marginRight:"4px" }}>Email:</span>prachigore408@gmail.com</p>
             <p style={{fontFamily:"sans-serif"}}><span style={{color:"blue",marginRight:"4px" }}>Place:</span>Mumbai, India</p>
             <Resume>
-              <p>
+              
               <span>Resume </span>
               {/* <i class="fa-regular fa-greater-than"></i> */}
              
-              </p>
+              
              <a href=''> <Button>JavaScript Developer</Button> </a>
              <a href=""> <Button>R Shiny Developer</Button></a>
 
@@ -49,13 +53,14 @@ const Container=styled.div`
 padding:50px;
 padding-top:20px;
 //letter-spacing: 0.1ch;
-font-family: 'Oswald', sans-serif;
+
 background-color: #dcfedc;
 
 
     
 `
 const SubContainer=styled.div`
+
 display: flex;
 align-items: center;
 justify-content: space-evenly;
@@ -63,20 +68,23 @@ justify-content: space-evenly;
     
 `
 const Top=styled.div`
-font-family: 'Roboto', sans-serif;
+//font-family: 'Roboto', sans-serif;
 display: flex;
 align-items: center;
 justify-content: center;
+img{
+  margin-right:3px;
+}
 
-span{
-  font-size: 24px;
-  font-weight: 700;
+h1{
+ 
+ 
   margin-right:7px;
 }
     
 `
 const Right=styled.div`
-font-family: cursive;
+
 margin-left:300px;
 width: 600px;
 h2{
@@ -92,12 +100,39 @@ small{
 p:first-of-type{
   font-size:18px;
   margin-top:10px;
+  font-family: cursive;
 }
     
 `
 const Left=styled.div`
+div{
+  /* background-color: #dbf26e;
+background-image: linear-gradient(319deg, #dbf26e 20%, #61fa74 47%, #1cfdd6 40%); */
+background-color: #ff1a1a;
+background-image: linear-gradient(315deg, #ff1a1a 0%, #ffff00 74%);
+
+ border-radius:15px;
+ height:300px;
+ width:280px;
+ position: relative;
+ span{
+  display: none;
+  font-size: 35px;
+  position:absolute;
+    top:130px;
+    left:30px;
+ }
+ :hover{
+  span{
+    display: inline;
+  }
+ }
+}
+
 img{
-  height:300px;
+  height:100%;
+  width: 100%;
+ 
   border-radius:15px;
   transition: all 0.5s ease-in-out ;
   :hover{
@@ -106,24 +141,22 @@ img{
   /* filter: grayscale(100%); */
   /* filter: hue-rotate(330deg); */
   filter: brightness(90%) contrast(110%) saturate(150%) hue-rotate(330deg);
-  transform: translate3d(50px, 0px, 0px);
+  transform: translate3d(100px, 0px, 0px);
+
   }
 }
     
 `
 const Resume=styled.div`
-font-family:"sans-serif";
+//font-family:"Arial";
 display:flex;
 align-items: center;
-p{
+
+span{
  margin-right:20px;
- font-size: 15px;
+ font-size:20px;
 color:red;
-  span{
-    
-    margin-right:2px;
-   
-  }
+ 
 }
   
 `

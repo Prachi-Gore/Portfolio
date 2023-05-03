@@ -34,9 +34,8 @@ background-color:aliceblue;
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding-right: 120px;
-padding-left:120px;
-padding-bottom:50px;
+
+padding: 50px 120px;
 font-family: 'Oswald', sans-serif;
 letter-spacing: 0.25ch;
 
@@ -67,7 +66,7 @@ p{
 }
     
 `;
-const Icon=styled.div`
+export const Icon=styled.div`
 padding-top:20px;
 font-size:25px;
 a{

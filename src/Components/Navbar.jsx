@@ -16,6 +16,7 @@ export default function Navbar() {
    <li> <a href='#skills'>  Skills</a></li>
    <li><a href='#education'> Education</a></li>
    <li><a href='#project'> Project</a></li>
+   <li><a href='#blog'> Blog</a></li>
    <li><a href='#contact'> Contact</a></li>
    </ul>
 </nav>
@@ -30,20 +31,31 @@ const Container=styled.div`
 letter-spacing: 0.1ch;
 font-family: 'Oswald', sans-serif;
 font-size: 20px;
+
 display:flex;
 align-items:center;
-padding-right: 120px;
+//padding-right: 420px;
 padding-left:120px;
 justify-content:space-between;
 height: 60px;
 box-shadow: 0px 0px 5px 2px lightgray;
 margin-bottom:5px;
+position:fixed;
+
+
+z-index: 1000;
+width:100%;
+
+background-color:aliceblue;
+
 
 
 
 `;
 const Right=styled.div`
 display: flex;
+
+padding-right:120px;
 
 nav{
    

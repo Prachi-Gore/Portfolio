@@ -15,7 +15,7 @@ function Blog() {
  </Left>
 <Right>
   <p>In my final semester of master I have given seminar on R Shiny. This blog is about <span>R Shiny</span>.</p>
- <a href='https://web-app-shiny-blog.netlify.app/'> <button>Visit Blog</button> </a>
+ <a href='https://web-app-shiny-blog.netlify.app/' target='_blank'> <button>Visit Blog</button> </a>
 </Right>
       </SubContainer>
 

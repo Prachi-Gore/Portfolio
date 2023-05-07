@@ -20,7 +20,7 @@ function Education() {
         
         <ECard image={nmu} degree="Master of Science in Statistics" name="Kavayitri Bahinabai Chaudhari North Maharashtra University, Jalgaon" descr="2021-2023 | Pursuing "/>  
         <ECard image={sathaey} degree="Bachelor of Science in Statistics" name="Parle Tilak Vidyalaya institution, Mumbai" descr="2017-2020 | Completed | 79% "/>
-        <ECard image={viva} degree="HSC Science | PCMCs" name="Shri Vishnu Waman Thakur Charitable Trust VIVA College, Virar" descr="2015-2017 | Completed | 75.57% "/>
+        <ECard image={viva} degree="HSC Science | PCMCS" name="Shri Vishnu Waman Thakur Charitable Trust VIVA College, Virar" descr="2015-2017 | Completed | 75.57% "/>
         <ECard image={avsv} degree="SSC" name="Annasaheb Vartak Smarak Vidyamandir, Virar" descr="2015 | Completed | 90.60% "/>
 
         </SubContainer>

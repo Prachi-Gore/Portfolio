@@ -62,8 +62,10 @@ margin-bottom:-22px;
 q{
   font-size:17px;
   margin-bottom:30px;
+  width: 90vw;
   font-family: 'Ysabeau', sans-serif;
   :before, :after{ content: "";}
+  
 }
 
     

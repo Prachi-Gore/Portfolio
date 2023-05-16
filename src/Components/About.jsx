@@ -5,11 +5,11 @@ import profilePic from '../assets/profile-pic.jpg';
 
 function About() {
   return (
-    <section id='about'>
+    <Section id='about'>
 
    
 
-    <Container>
+    
         <Top>
 
         <img src="https://img.icons8.com/glyph-neue/45/null/user-female-circle.png"/>
@@ -47,19 +47,20 @@ function About() {
         </SubContainer>
         
         
-     </Container> 
-     </section> 
+     
+     </Section> 
   )
 }
 
 export default About;
 
-const Container=styled.div`
+const Section=styled.section`
 padding:50px;
 padding-top:20px;
 //letter-spacing: 0.1ch;
 
 background-color: #dcfedc;
+
 
 
     
@@ -69,6 +70,9 @@ const SubContainer=styled.div`
 display: flex;
 align-items: center;
 justify-content: space-evenly;
+@media screen and (max-width: 868px){
+  flex-direction: column;
+}
 
     
 `
@@ -91,19 +95,34 @@ h1{
 const Right=styled.div`
 
 margin-left:300px;
-width: 600px;
+width: 400px;
+@media screen and (max-width: 868px){
+  margin-left:auto;
+}
+@media screen and (max-width: 1000px){
+  margin-left: 100px;
+}
 h2{
   margin-bottom:3px;
+  @media screen and (max-width: 868px){
+  
+  padding-left: 152px;
+  
+}
 }
 small{
   color:#000080;
   font-size:16px;
- 
+  @media screen and (max-width: 868px){
+  margin-left:148px;
+  
+  
+}
   
 }
 
 p:first-of-type{
-  font-size:18px;
+  font-size:16px;
   margin-top:10px;
   font-family: cursive;
 }

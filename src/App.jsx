@@ -8,11 +8,12 @@ import Education from './Components/Education'
 import Blog from './Components/Blog'
 import Contact from './Components/Contact'
 import Project from './Components/Project'
+import styled from 'styled-components'
 
 
 function App() {
   return(
-   <div className="app">
+   <Container>
    <Navbar/>
    <Home/>
    <About/>
@@ -21,12 +22,16 @@ function App() {
    <Project/>
    <Blog/>
    <Contact/>
-   </div>
+   </Container>
     
 
 
   )
-
+}
+  const Container=styled.div`
+    width:100vw ;
+    overflow: hidden;
+  `;
 
 
 
@@ -36,6 +41,6 @@ function App() {
 
   
    
-}
+
 
 export default App

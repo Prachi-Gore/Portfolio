@@ -2,11 +2,13 @@ import React from 'react'
 import styled from 'styled-components';
 import jsLogo from '../assets/js-logo.png'
 import { useState,useEffect } from 'react';
+
 export default function Navbar() {
     const [activeTab, setActiveTab] = useState('home');
 
   useEffect(() => {
     const handleScroll = () => {
+        console.log("scrolled")
       const homeSection = document.getElementById('home');
       const aboutSection = document.getElementById('about');
       const skillsSection = document.getElementById('skills');
@@ -23,17 +25,22 @@ export default function Navbar() {
       const blogTop = blogSection.offsetTop;
       const contactTop = contactSection.offsetTop;
       
-      const scrollPosition = window.scrollY + 200;
-      
+      const scrollPosition = window.scrollY+300;
+      console.log(scrollPosition)
       if (scrollPosition < aboutTop) {
+        console.log("home")
         setActiveTab('home');
       } else if (scrollPosition >= aboutTop && scrollPosition < skillsTop) {
+        console.log("about")
         setActiveTab('about');
       } else if (scrollPosition >= skillsTop && scrollPosition < educationTop) {
+        console.log("skills")
         setActiveTab('skills');
       } else if (scrollPosition >= educationTop && scrollPosition < projectTop) {
+        console.log("education")
         setActiveTab('education');
       } else if (scrollPosition >= projectTop && scrollPosition < blogTop) {
+        console.log("project")
         setActiveTab('project');
       } else if (scrollPosition >= blogTop && scrollPosition < contactTop) {
         setActiveTab('blog');
@@ -42,10 +49,10 @@ export default function Navbar() {
       }
     };
     
-    window.addEventListener('scroll', {handleScroll});
+    window.addEventListener('scroll', handleScroll);
     
     return () => {
-      window.removeEventListener('scroll', {handleScroll});
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -95,7 +102,11 @@ z-index: 1000;
 width:100%;
 
 background-color:aliceblue;
-
+@media screen and (max-width: 900px) {
+  justify-content: flex-start;
+  
+  
+  }
 
 
 
@@ -110,15 +121,21 @@ nav{
    
     ul{
        display:flex;
-        li{
-        margin-right:30px;
-        list-style:none;  
-        .active a {
+       .active a {
   color: #fff;
   background-color: #000;
   padding: 5px 10px;
   border-radius: 5px;
+  :hover{
+    color: #fff;
+    border-bottom:none;
+    padding-bottom: none; 
+  }
 }
+        li{
+        margin-right:30px;
+        list-style:none;  
+       
     a{
         color: black;
         text-decoration:none;

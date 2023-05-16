@@ -44,6 +44,7 @@ font-family: 'Oswald', sans-serif;
 letter-spacing: 0.25ch;
 
 
+
     
 `;
 const Right=styled.div`

@@ -62,7 +62,11 @@ flex-direction:column;
    padding-left:10px;
    margin: 0px;
    font-family:arial;
-   
+   @media screen and (max-width: 1352px){
+   height: 40px;
+  
+  
+  }
    :hover+.subcontainer{
     
     display: block;
@@ -84,6 +88,11 @@ display: none;
 font-family:arial;
 background-color:white;
 margin-top:-200px;
+@media screen and (max-width: 1352px){
+ margin-top: -180px;
+  
+  
+  }
 :hover{
   display: block;
 }

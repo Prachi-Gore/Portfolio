@@ -70,6 +70,22 @@ background-image: linear-gradient(315deg, #ad1deb 71%,#6e72fc 0%);
     grid-template-columns:repeat(6,1fr);
     grid-auto-rows:auto;
     gap:20px;
+    @media screen and (max-width: 930px){
+        grid-template-columns:repeat(3,1fr);
+  
+  
+}
+@media screen and (max-width: 1202px) and (min-width: 930px){
+        grid-template-columns:repeat(4,1fr);
+  
+  
+}
+@media screen and (min-width: 1202px) and (max-width:1406px){
+        grid-template-columns:repeat(5,1fr);
+  
+  
+}
+
 
 `
 

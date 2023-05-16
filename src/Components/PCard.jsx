@@ -1,20 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
-import mmt from '../assets/mmt.mp4'
+import finance_calculator from '../assets/finance_calculator.mp4';
+
 
 function PCard() {
   return (
     <Container>
-    <div className='video'>
-    <video   controls src={mmt} type="video/mp4"></video>
+    
+    <video   autoPlay controls  src={finance_calculator} type="video/mp4"></video>
     
      <h2>Model Monitoring Tool</h2>
-     </div>
-<SubContainer>
-    <p className='descr'></p>
-    <Button><i class="fa-regular fa-eye"></i>Preview</Button>
-    <Button><i class="fa-solid fa-code"></i>Code</Button>
+     <SubContainer className='subcontainer'>
+     <h2>Model Monitoring Tool</h2>
+    <p className='descr'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem enim ratione vero molestias non iure nisi voluptatum quam quidem.</p>
+    <div className="buttons">
+    <a href=''><Button><i class="fa-regular fa-eye"></i>Preview</Button></a>
+    <a href=''><Button><i class="fa-solid fa-code"></i>Code</Button></a> 
+    </div>
+    
 </SubContainer>
+
+
+    
+
     </Container>
   )
 }
@@ -22,47 +30,100 @@ function PCard() {
 export default PCard;
 
 const Container=styled.div`
+display: flex;
+flex-direction:column;
 
 
-.video{
- 
+
+
+
+  
   
     
     
   
   video{
-   height:300px;
-    width:100%;
+   height:253px;
     cursor: pointer;
-    margin-bottom: -25px;
-    ::-webkit-media-controls-panel{
-      display: none !important;
-    }
+   
+   
+   
   
   }
+ 
 
 
   h2{
    height: 50px;
-   background-color: #ffbf00;
+   background-color: #f4f411;
    color: black;
    display: flex;
    align-items: center;
    padding-left:10px;
-   margin-top:0px;
+   margin: 0px;
+   font-family:arial;
+   
+   :hover+.subcontainer{
+    
+    display: block;
+
+ }
+ 
+ 
+   
+   
+   
 
   }
   
-}
+
     
 `;
 const SubContainer=styled.div`
 display: none;
-    
+font-family:arial;
+background-color:white;
+margin-top:-200px;
+:hover{
+  display: block;
+}
+
+
+
+
+
+p{
+  color: black;
+  padding: 10px;
+  font-size:17px;
+ 
+  
+}
+.buttons{
+  display: flex;
+  justify-content: space-evenly;
+  
+  padding-top:15px ;
+  padding-bottom:25px;
+  i{
+    margin-right:5px;
+  }
+  
+} 
+
 `;
 const Button=styled.button`
+font-size:17px;
+padding: 8px 15px;
+cursor: pointer;
+
+
+`
     
-`;
+
+
+ 
+
 
 
 

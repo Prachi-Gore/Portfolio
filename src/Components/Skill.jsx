@@ -7,6 +7,8 @@ import data from "../skill.json";
 function Skill() {
    const newArray= data.map((item)=><Card icon={item.icon} name={item.name}/>)
   return (
+    <section id='skills'>
+
    <Container>
     <p>
     <img src="https://img.icons8.com/pastel-glyph/64/000000/laptop-coding--v1.png"/>
@@ -20,6 +22,8 @@ function Skill() {
     </SubContainer>
 
    </Container>
+    </section>
+
   )
 }
 

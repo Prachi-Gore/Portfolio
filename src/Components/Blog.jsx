@@ -4,6 +4,8 @@ import blog from '../assets/blog.jpg'
 
 function Blog() {
   return (
+    <section id='blog'>
+
     <Container>
       <p>
       <i class="fa-solid fa-newspaper"></i>
@@ -20,6 +22,8 @@ function Blog() {
       </SubContainer>
 
     </Container>
+    </section >
+
   )
 }
 

@@ -9,6 +9,8 @@ import avsv from '../assets/avsv.jpg';
 
 function Education() {
   return (
+    <section id='education'>
+
     <Container >
         <div className="header">
         <i class="fa-solid fa-graduation-cap"></i>
@@ -26,6 +28,8 @@ function Education() {
         </SubContainer>
         
     </Container>
+     </section >
+
   )
 }
 

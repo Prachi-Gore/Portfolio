@@ -5,6 +5,10 @@ import profilePic from '../assets/profile-pic.jpg';
 
 function About() {
   return (
+    <section id='about'>
+
+   
+
     <Container>
         <Top>
 
@@ -43,7 +47,8 @@ function About() {
         </SubContainer>
         
         
-     </Container>  
+     </Container> 
+     </section> 
   )
 }
 

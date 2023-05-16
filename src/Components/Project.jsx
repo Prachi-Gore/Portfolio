@@ -4,6 +4,8 @@ import PCard from './PCard'
 
 function Project() {
   return (
+    <section id='project'>
+
     <Container>
     <p>
     
@@ -21,6 +23,8 @@ function Project() {
     <PCard></PCard>
     </ProjectContainer>
     </Container>
+     </section >
+
   )
 }
 

@@ -8,6 +8,8 @@ function Home() {
    const [index,setIndex]=useState(0);
    setTimeout(()=>setIndex(index+1),1500) // 1.5sec
   return (
+    <section id='home'>
+
    <Container>
 <Left>
 <h1>Hi There 👋</h1>
@@ -24,6 +26,8 @@ function Home() {
 <img src={home_img} alt="" />
 </Right>
    </Container>
+   </section>
+
   )
 }
 

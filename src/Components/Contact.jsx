@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 function Contact() {
   return (
+    <section id='contact'>
+
     <Container>
       <Left>
         <h2>Prachi's Portfolio</h2>
@@ -35,6 +37,8 @@ function Contact() {
         
       </Right>
     </Container>
+    </section >
+
   );
 }
 

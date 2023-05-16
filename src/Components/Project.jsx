@@ -17,6 +17,8 @@ function Project() {
     <PCard></PCard>
     <PCard></PCard>
     <PCard></PCard>
+    <PCard></PCard>
+    <PCard></PCard>
     </ProjectContainer>
     </Container>
   )
@@ -30,6 +32,7 @@ height: fit-content;
 color:white;
 display: flex;
 flex-direction: column;
+margin-bottom:-17px;
 
 
 p{
@@ -58,13 +61,12 @@ p{
     
 `
 const ProjectContainer=styled.div`
-padding:50px;
-padding-top:20px;
+padding:20px 40px 50px 50px;
 display: grid;
-grid-template-columns:repeat(3,1fr);
-grid-auto-rows:450px;
+grid-template-columns:repeat(3,450px);
+grid-auto-rows:303px;
 column-gap:30px;
-row-gap: 0px;
+row-gap: 30px;
 
   
 `

@@ -55,7 +55,18 @@ h1,h2{
     
     font-weight:200;
 }
-
+@media screen and (max-width:690px) {
+  flex-direction: column;
+  padding-left: 120px;
+  
+  
+}
+@media screen and (max-width:586px) {
+  flex-direction: column;
+  padding-left: 20px;
+  
+  
+}
     
 `
 const Right=styled.div`

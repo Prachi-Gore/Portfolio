@@ -109,6 +109,14 @@ row-gap: 30px;
   padding-left:0px;
   padding-right: 0px;
   }
+  @media screen and (max-width: 388px) {
+  grid-template-columns:repeat(1,300px);
+  padding-left:0px;
+  padding-right: 0px;
+  row-gap: 0px;
+  grid-auto-rows:250px;
+  }
+
 
   
 `

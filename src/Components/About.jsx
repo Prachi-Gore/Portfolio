@@ -37,9 +37,10 @@ function About() {
               <span>Resume </span>
               {/* <i class="fa-regular fa-greater-than"></i> */}
              
-              
+              <Buttons>
              <a href=''> <Button>JavaScript Developer</Button> </a>
              <a href=""> <Button>R Shiny Developer</Button></a>
+             </Buttons>
 
             </Resume>
 
@@ -102,6 +103,15 @@ width: 400px;
 @media screen and (max-width: 1000px){
   margin-left: 100px;
 }
+@media screen and (max-width: 510px){
+  margin-left: 5%;
+}
+@media screen and (max-width: 428px){
+  margin-left: 20%;
+  width: 350px;
+ 
+ 
+}
 h2{
   margin-bottom:3px;
   @media screen and (max-width: 868px){
@@ -125,6 +135,10 @@ p:first-of-type{
   font-size:16px;
   margin-top:10px;
   font-family: cursive;
+  @media screen and (max-width: 428px){
+ width: 80%;
+ 
+}
 }
     
 `
@@ -182,6 +196,11 @@ span{
 color:red;
  
 }
+@media screen and (max-width:430px){
+  flex-direction: column;
+
+  
+}
   
 `
 const Button=styled.button`
@@ -198,6 +217,31 @@ font-size: 17px;
   background-color:#257ebd;
 
 }
+@media screen and (max-width:430px){
+  font-size:15px;
+  padding: 10px;
+  margin-top: 10px;
+  
+}
+@media screen and (max-width:355px){
+  font-size:15px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right:15px;
+  
+}
   
 `
+const Buttons=styled.div`
+  display: flex;
+    flex-direction: row;
+    @media screen and (max-width:355px){
+ 
+  margin-left:-40px;
+  
+}
+    
+`;
+
+
 

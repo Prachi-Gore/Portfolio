@@ -52,6 +52,7 @@ h1{
   color: #010057;
 }
 } 
+
 `
 const SubContainer=styled.div`
 display: flex;
@@ -60,6 +61,16 @@ display: flex;
 justify-content: space-evenly;
 height: 200px;
 
+@media screen and (max-width:820px) {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  height: fit-content;
+  
+
+  
+}
   
 `
 const Left=styled.div`
@@ -68,7 +79,14 @@ img{
   height: 100%;
   width:400px;
   border-radius:5px;
+  @media screen and (max-width:410px) {
+  width:300px;
+  
+  
+  
 }
+}
+
   
 `
 const Right=styled.div`
@@ -88,9 +106,22 @@ font-size: 17px;
   background-color:#257ebd;
 
 }
+@media screen and (max-width:820px) {
+  margin-left:150px;
+}
 } 
 p{
   display: inline-block;
+  @media screen and (max-width:410px) {
+ width:280px;
+ 
+ 
+ 
+  margin-left:50px;
+ 
+  
+  
+}
   span{
     font-size: 20px;
     color:#010057;

@@ -67,6 +67,10 @@ flex-direction:column;
   
   
   }
+  @media screen and (max-width: 388px) {
+  margin-top: -45px;
+  }
+
    :hover+.subcontainer{
     
     display: block;

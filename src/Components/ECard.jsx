@@ -28,16 +28,34 @@ margin-bottom: 20px;
 :hover{
   box-shadow:3px 3px 3px 3px #83c1f8;
 }
-    
+ @media screen and (max-width: 900px) {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  
+ }   
 `
 const Left=styled.div`
 width:35%;
 margin-right:30px;
+
 img{
   height:100%;
   width:100%;
   border-top-left-radius:5px;
   border-bottom-left-radius:5px;
+  @media screen and (max-width: 900px) {
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-bottom-left-radius:0px;
+    
+}
+@media screen and (max-width: 900px) {
+  height: 150px;
+}
+}
+@media screen and (max-width: 900px) {
+  width: 100%;
 }
     
 `
@@ -45,6 +63,10 @@ const Right=styled.div`
 width: 65%;
 h2{
   color:rgb(10, 10, 101);
+  @media screen and (max-width: 900px) {
+    font-size:20px;
+  }
+  
 }
 p:nth-child(3){
   color: #2c922c;
@@ -52,6 +74,12 @@ p:nth-child(3){
   font-family:Arial;
  font-weight:700;
   
+}
+@media screen and (max-width: 900px) {
+  width: 80%;
+  
+  padding-left:10px;
+  height:fit-content;
 }
 
     

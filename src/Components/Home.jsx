@@ -42,7 +42,10 @@ justify-content:space-between;
 padding: 50px 120px;
 font-family: 'Oswald', sans-serif;
 letter-spacing: 0.25ch;
-
+@media screen and (max-width:738px){
+    flex-direction: column;
+    
+}
 
 
     
@@ -71,15 +74,16 @@ p{
 }
     
 `;
-export const Icon=styled.div`
+ const Icon=styled.div`
 padding-top:20px;
+width:300px;
+
 font-size:25px;
 a{
     margin-right:20px;
     padding:10px;
     
     border-radius:40%;
-
     background-color:yellow;
 }
     

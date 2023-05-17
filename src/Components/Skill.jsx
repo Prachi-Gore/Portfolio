@@ -70,12 +70,38 @@ background-image: linear-gradient(315deg, #ad1deb 71%,#6e72fc 0%);
     grid-template-columns:repeat(6,1fr);
     grid-auto-rows:auto;
     gap:20px;
-    @media screen and (max-width: 930px){
+    @media screen and (max-width: 474px) {
+        grid-template-columns:repeat(1,1fr);
+        background-image: linear-gradient(290deg, #ad1deb 81%,#6e72fc 0%);
+        padding-left: 30px;
+        
+        
+        
+  
+  
+}
+    @media screen and (max-width: 568px) and (min-width: 474px){
+        grid-template-columns:repeat(1,1fr);
+        background-image: linear-gradient(290deg, #ad1deb 71%,#6e72fc 0%);
+        
+        padding-left: 120px;
+        
+  
+  
+}
+    @media screen and (max-width: 767px) and (min-width: 568px) {
+        grid-template-columns:repeat(2,1fr);
+        background-image: linear-gradient(305deg, #ad1deb 71%,#6e72fc 0%);
+        
+  
+  
+}
+    @media screen and (max-width: 974px) and (min-width:767px){
         grid-template-columns:repeat(3,1fr);
   
   
 }
-@media screen and (max-width: 1202px) and (min-width: 930px){
+@media screen and (max-width: 1202px) and (min-width: 974px){
         grid-template-columns:repeat(4,1fr);
   
   

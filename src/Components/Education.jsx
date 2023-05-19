@@ -17,7 +17,7 @@ function Education() {
         <h1 >My <span>Education</span></h1>
         
         </div>
-        <q>for me the purpose of education is not just to get a degree but the time given by parents to explore different things and find our passion.</q>
+        <q>for me the purpose of education is not just to get a degree but the time given by parents to explore different domains and find our passion.</q>
         <SubContainer>
         
         <ECard image={nmu} degree="Master of Science in Statistics" name="Kavayitri Bahinabai Chaudhari North Maharashtra University, Jalgaon" descr="2021-2023 | Pursuing "/>  

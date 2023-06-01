@@ -63,6 +63,7 @@ q{
   font-size:17px;
   margin-bottom:30px;
   width: 90vw;
+  text-align: center;
   font-family: 'Ysabeau', sans-serif;
   :before, :after{ content: "";}
   

@@ -38,8 +38,8 @@ function About() {
               {/* <i class="fa-regular fa-greater-than"></i> */}
              
               <Buttons>
-             <a href=''> <Button>JavaScript Developer</Button> </a>
-             <a href=""> <Button>R Shiny Developer</Button></a>
+             <a href='https://drive.google.com/file/d/19V-SASZ9sSSxCSmzeE2_Efkh8Az4sDmA/view?usp=sharing'> <Button>JavaScript Developer</Button> </a>
+             <a href="https://drive.google.com/file/d/19SnP7UU8L0muuq1UuGhfJ9y1FPJruZik/view"> <Button>R Shiny Developer</Button></a>
              </Buttons>
 
             </Resume>
@@ -146,9 +146,8 @@ const Left=styled.div`
 div{
   /* background-color: #dbf26e;
 background-image: linear-gradient(319deg, #dbf26e 20%, #61fa74 47%, #1cfdd6 40%); */
-background-color: #ff1a1a;
-background-image: linear-gradient(315deg, #ff1a1a 0%, #ffff00 74%);
-
+background-color: black;
+padding: 7px;
  border-radius:15px;
  height:300px;
  width:280px;
@@ -161,10 +160,20 @@ background-image: linear-gradient(315deg, #ff1a1a 0%, #ffff00 74%);
     left:30px;
  }
  :hover{
+  
+    background-color: #ff1a1a;
+background-image: linear-gradient(315deg, #ff1a1a 0%, #ffff00 74%);
+padding: 0;
+  
   span{
     display: inline;
   }
  }
+ @media screen and (max-width:430px){
+    
+      border-radius:50%;
+   
+  }
 }
 
 img{
@@ -182,6 +191,11 @@ img{
   transform: translate3d(100px, 0px, 0px);
 
   }
+  @media screen and (max-width:430px){
+    img{
+      border-radius:50%;
+    }
+  }
 }
     
 `
@@ -198,6 +212,7 @@ color:red;
 }
 @media screen and (max-width:430px){
   flex-direction: column;
+  
 
   
 }

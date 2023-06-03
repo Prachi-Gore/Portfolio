@@ -3,19 +3,22 @@ import styled from 'styled-components';
 import finance_calculator from '../assets/finance_calculator.mp4';
 
 
-function PCard() {
+
+function PCard({src,name,descr,code,preview}) {
+  
   return (
+   
     <Container>
     
-    <video   autoPlay controls  src={finance_calculator} type="video/mp4"></video>
+    <video    controls  src={src} type="video/mp4"></video>
     
-     <h2>Model Monitoring Tool</h2>
+     <h2>{name}</h2>
      <SubContainer className='subcontainer'>
-     <h2>Model Monitoring Tool</h2>
-    <p className='descr'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem enim ratione vero molestias non iure nisi voluptatum quam quidem.</p>
+     <h2>{name}</h2>
+    <p className='descr'>{descr}</p>
     <div className="buttons">
-    <a href=''><Button><i class="fa-regular fa-eye"></i>Preview</Button></a>
-    <a href=''><Button><i class="fa-solid fa-code"></i>Code</Button></a> 
+    <a href={preview}><Button><i class="fa-regular fa-eye"></i>Preview</Button></a>
+    <a href={code}><Button><i class="fa-solid fa-code"></i>Code</Button></a> 
     </div>
     
 </SubContainer>
@@ -24,7 +27,8 @@ function PCard() {
     
 
     </Container>
-  )
+    )
+  
 }
 
 export default PCard;
@@ -92,6 +96,7 @@ display: none;
 font-family:arial;
 background-color:white;
 margin-top:-200px;
+height:200px;
 @media screen and (max-width: 1352px){
  margin-top: -180px;
   
@@ -109,6 +114,7 @@ p{
   color: black;
   padding: 10px;
   font-size:17px;
+  height:50px;
  
   
 }

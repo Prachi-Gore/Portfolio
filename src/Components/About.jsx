@@ -163,7 +163,7 @@ padding: 7px;
   
     background-color: #ff1a1a;
 background-image: linear-gradient(315deg, #ff1a1a 0%, #ffff00 74%);
-padding: 0;
+padding: 0px;
   
   span{
     display: inline;

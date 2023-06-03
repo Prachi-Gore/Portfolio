@@ -8,7 +8,7 @@ function handleContextMenu(event){
     event.preventDefault();
 
 }
-document.addEventListener('contextmenu',handleContextMenu)
+//document.addEventListener('contextmenu',handleContextMenu)
 ReactDOM.render(
     <React.StrictMode>
     <App/>    

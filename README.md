@@ -1,7 +1,9 @@
 ## Portfolio Website
- <a href="">
+<p align="center">
+ <a href="https://prachi-gore-portfolio.netlify.app/">
  <img src="page.png"/>
  </a>
+ </p>
 <h3>Tech Stack Used</h3>
  <ul>
  <li>HTML</li>

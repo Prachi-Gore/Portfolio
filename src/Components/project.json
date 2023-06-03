@@ -1,6 +1,8 @@
+
+
 [
     {
-        "src":"../src/assets/amazon_frontend.mp4",
+        "src":"/assets/amazon_frontend.mp4",
         "name":"Amazon🛒 Clone",
         "descr":"This is Amazon clone build with ReactJS, Styled Components and HTML5",
         "code":"https://github.com/Prachi-Gore/amazon",
@@ -14,7 +16,7 @@
     "preview":"https://prachigore29.shinyapps.io/Finance_Calculator/"
 },
 {
-    "src":"../src/assets/dvmft.mp4",
+    "src":"/assets/dvmft.mp4",
     "name":"Data Visualization&Model Fitting Tool",
     "descr":"Now user can visualize dataset, fit the model without knowing any programming language",
     "code":"https://github.com/Prachi-Gore/Model-Fitting-Data-Visualization-Tool",

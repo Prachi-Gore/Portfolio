@@ -24,7 +24,7 @@
     
 },
 {
-    "src":"../src/assets/netflix_frontend.mp4",
+    "src":"https://github.com/Prachi-Gore/Portfolio/blob/main/src/assets/netflix_frontend.mp4",
     "name":"Netflix Clone",
     "descr":"This is Netflix clone build with HTML5, SCSS and ReactJS ",
     "code":"https://github.com/Prachi-Gore/Netflix-Clone",

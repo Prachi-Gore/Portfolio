@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import finance_calculator from '../assets/finance_calculator.mp4';
+import finance_calculator from '../assets/blog_shiny.mp4';
 
 
 
@@ -10,7 +10,7 @@ function PCard({src,name,descr,code,preview}) {
    
     <Container>
    
-    <video    controls  src={'https://github.com/Prachi-Gore/Portfolio/blob/main/dist/assets/finance_calculator-15d51f37.mp4'} type="video/mp4"></video>
+    <video    controls  src={finance_calculator} type="video/mp4"></video>
     
      <h2>{name}</h2>
      <SubContainer className='subcontainer'>

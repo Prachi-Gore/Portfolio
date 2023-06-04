@@ -19,8 +19,9 @@ import quiz_cli from '../assets/quiz_cli.mp4';
 import palindrome_birthday from '../assets/palindrome_birthday.mp4';
 import meme_generator from '../assets/meme_generator.mp4';
 import lucky_bday from '../assets/lucky_bday.mp4';
+import portfolio from '../assets/portfolio.mp4';
 
- //const arraySrc=[amazon_frontend,finance_calculator,netflix_frontend,dvmft,fun_with_triangle,airbnb,meme_generator,react_info_app,random_multiplication,cash_register_manager,char_count,digital_clock,stock_price,quiz_cli,palindrome_birthday,blog_shiny,lucky_bday]
+ //const arraySrc=[amazon_frontend,finance_calculator,netflix_frontend,dvmft,fun_with_triangle,airbnb,meme_generator,react_info_app,random_multiplication,cash_register_manager,char_count,digital_clock,stock_price,quiz_cli,palindrome_birthday,blog_shiny,lucky_bday,portfolio]
 
 const data=[
   {
@@ -143,7 +144,14 @@ const data=[
   "descr":"This blog is regarding how to create dashboard in R shiny. specially for How to render Plots ",
   "code":"https://github.com/Prachi-Gore/blog-shiny",
   "preview":"https://web-app-shiny-blog.netlify.app/"
-  }
+  },
+  {
+    "src":portfolio,
+    "name":"Portfolio",
+    "descr":"This is my portfolio as a JavaScript, ReactJS, R Shiny Developer ",
+    "code":"https://github.com/Prachi-Gore/portfolio",
+    "preview":"https://prachi-gore-portfolio.netlify.app/"
+    }
 
 
 

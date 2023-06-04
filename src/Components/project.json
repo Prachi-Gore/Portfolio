@@ -121,7 +121,14 @@
     "descr":"This blog is regarding how to create dashboard in R shiny. specially for How to render Plots ",
     "code":"https://github.com/Prachi-Gore/blog-shiny",
     "preview":"https://web-app-shiny-blog.netlify.app/"
-    }
+    },
+    {
+      "src":"../src/assets/portfolio.mp4",
+      "name":"Portfolio",
+      "descr":"This is my portfolio as a JavaScript, ReactJS, R Shiny Developer ",
+      "code":"https://github.com/Prachi-Gore/portfolio",
+      "preview":"https://prachi-gore-portfolio.netlify.app/"
+      }
 
 
 

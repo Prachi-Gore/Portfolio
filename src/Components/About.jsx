@@ -38,8 +38,8 @@ function About() {
               {/* <i class="fa-regular fa-greater-than"></i> */}
              
               <Buttons>
-             <a href='https://drive.google.com/file/d/19V-SASZ9sSSxCSmzeE2_Efkh8Az4sDmA/view?usp=sharing'> <Button>JavaScript Developer</Button> </a>
-             <a href="https://drive.google.com/file/d/19SnP7UU8L0muuq1UuGhfJ9y1FPJruZik/view"> <Button>R Shiny Developer</Button></a>
+             <a href='https://drive.google.com/file/d/19V-SASZ9sSSxCSmzeE2_Efkh8Az4sDmA/view?usp=sharing'target='_blank'> <Button>JavaScript Developer</Button> </a>
+             <a href="https://drive.google.com/file/d/19SnP7UU8L0muuq1UuGhfJ9y1FPJruZik/view"target='_blank'> <Button>R Shiny Developer</Button></a>
              </Buttons>
 
             </Resume>

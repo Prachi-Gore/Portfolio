@@ -10,19 +10,19 @@ function Contact() {
         <h2>Prachi's Portfolio</h2>
         <p>Thank you for visiting my personal portfolio website. </p>
         <div className="icon">
-          <a href="https://www.linkedin.com/in/prachi-gore-4772a11a5">
+          <a href="https://www.linkedin.com/in/prachi-gore-4772a11a5"target='_blank'>
             <i class="fa-brands fa-linkedin"></i>
           </a>
-          <a href="https://github.com/Prachi-Gore">
+          <a href="https://github.com/Prachi-Gore"target='_blank'>
             <i class="fa-brands fa-github"></i>
           </a>
-          <a href="https://www.hackerrank.com/prachi_gore">
+          <a href="https://www.hackerrank.com/prachi_gore"target='_blank'>
             <i class="fa-brands fa-hackerrank"></i>
           </a>
-          <a href="mailto:prachigore408@gmail.com">
+          <a href="mailto:prachigore408@gmail.com"target='_blank'>
            <i class="fa-solid fa-envelope"> </i>
           </a>
-          <a href="https://dev.to/prachigore">
+          <a href="https://dev.to/prachigore" target='_blank'>
             <i class="fa-brands fa-dev"></i>
           </a>
         </div>

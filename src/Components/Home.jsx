@@ -16,10 +16,10 @@ function Home() {
 <h1>I'm Prachi <span style={{color:"orange"}}>Gore</span></h1>
 <p>I Am Learning <span style={{color:"red"}}>{words[index%words.length]}</span></p>
 <Icon>
-<a href='https://www.linkedin.com/in/prachi-gore-4772a11a5'><i class="fa-brands fa-linkedin"></i></a>
-<a href='https://github.com/Prachi-Gore'><i class="fa-brands fa-github"></i></a>
-<a href='https://www.hackerrank.com/prachi_gore'><i class="fa-brands fa-hackerrank"></i></a>
-<a href='https://dev.to/prachigore'><i class="fa-brands fa-dev"></i></a>
+<a href='https://www.linkedin.com/in/prachi-gore-4772a11a5'target='_blank'><i class="fa-brands fa-linkedin"></i></a>
+<a href='https://github.com/Prachi-Gore'target='_blank'><i class="fa-brands fa-github"></i></a>
+<a href='https://www.hackerrank.com/prachi_gore'target='_blank'><i class="fa-brands fa-hackerrank"></i></a>
+<a href='https://dev.to/prachigore'target='_blank'><i class="fa-brands fa-dev"></i></a>
 </Icon>
 </Left>
 <Right>

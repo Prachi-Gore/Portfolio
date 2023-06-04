@@ -10,7 +10,7 @@ function PCard({src,name,descr,code,preview}) {
    
     <Container>
    
-    <video    controls  src={'src/assets/blog_shiny.mp4'} type="video/mp4"></video>
+    <video    controls  src={'https://github.com/Prachi-Gore/Portfolio/blob/main/dist/assets/finance_calculator-15d51f37.mp4'} type="video/mp4"></video>
     
      <h2>{name}</h2>
      <SubContainer className='subcontainer'>

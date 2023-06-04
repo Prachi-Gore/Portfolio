@@ -31,7 +31,7 @@
     "preview":"https://netflix-ui-react-scss.netlify.app/"
 },
 {
-    "src":"../src/assets/fun_with_triangle.mp4",
+    "src":"../assets/fun_with_triangle.mp4",
     "name":"Fun With Triangle📐",
     "descr":"This is multi page website Here you can check whether given geometry is triangle? Area? Hypotenous? Quizzes ",
     "code":"https://github.com/Prachi-Gore/Fun_With_Triangles",

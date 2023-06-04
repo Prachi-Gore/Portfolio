@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PCard from './PCard'
 import data from './project.json';
+import finance_calculator from '../assets/finance_calculator.mp4';
 
 function Project() {
   return (
@@ -14,7 +15,7 @@ function Project() {
     <h1>Projects <span style={{color:"#ffff00"}}>Made</span></h1>
     </p>
     <ProjectContainer>
-     { data.map((item)=><PCard src={item.src} name={item.name} descr={item.descr} preview={item.preview} code={item.code}></PCard>)}
+     { data.map((item)=><PCard src={finance_calculator} name={item.name} descr={item.descr} preview={item.preview} code={item.code}></PCard>)}
     
     </ProjectContainer>
     </Container>

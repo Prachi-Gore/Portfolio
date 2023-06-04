@@ -17,8 +17,8 @@ function PCard({src,name,descr,code,preview}) {
      <h2>{name}</h2>
     <p className='descr'>{descr}</p>
     <div className="buttons">
-    <a href={preview}><Button><i class="fa-regular fa-eye"></i>Preview</Button></a>
-    <a href={code}><Button><i class="fa-solid fa-code"></i>Code</Button></a> 
+    <a target="_blank"href={preview}><Button><i class="fa-regular fa-eye"></i>Preview</Button></a>
+    <a target="_blank"href={code}><Button><i class="fa-solid fa-code"></i>Code</Button></a> 
     </div>
     
 </SubContainer>

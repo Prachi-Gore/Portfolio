@@ -169,11 +169,7 @@ padding: 0px;
     display: inline;
   }
  }
- @media screen and (max-width:430px){
-    
-      border-radius:50%;
-   
-  }
+ 
 }
 
 img{
@@ -191,11 +187,7 @@ img{
   transform: translate3d(100px, 0px, 0px);
 
   }
-  @media screen and (max-width:430px){
-    img{
-      border-radius:50%;
-    }
-  }
+  
 }
     
 `

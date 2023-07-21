@@ -20,7 +20,7 @@ function Education() {
         <q>for me the purpose of education is not just to get a degree but the time given by parents to explore different domains and find our passion.</q>
         <SubContainer>
         
-        <ECard image={nmu} degree="Master of Science in Statistics" name="Kavayitri Bahinabai Chaudhari North Maharashtra University, Jalgaon" descr="2021-2023 | Completed "/>  
+        <ECard image={nmu} degree="Master of Science in Statistics" name="Kavayitri Bahinabai Chaudhari North Maharashtra University, Jalgaon" descr="2021-2023 | Completed | 73.33% "/>  
         <ECard image={sathaey} degree="Bachelor of Science in Statistics" name="Parle Tilak Vidyalaya institution, Mumbai" descr="2017-2020 | Completed | 79% "/>
         <ECard image={viva} degree="HSC Science | PCMCS" name="Shri Vishnu Waman Thakur Charitable Trust VIVA College, Virar" descr="2015-2017 | Completed | 75.57% "/>
         <ECard image={avsv} degree="SSC" name="Annasaheb Vartak Smarak Vidyamandir, Virar" descr="2015 | Completed | 90.60% "/>

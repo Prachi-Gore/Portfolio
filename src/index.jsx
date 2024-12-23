@@ -8,10 +8,10 @@ function handleContextMenu(event){
     event.preventDefault();
 
 }
-document.addEventListener('contextmenu',handleContextMenu)
-ReactDOM.render(
-    <React.StrictMode>
+// document.addEventListener('contextmenu',handleContextMenu)
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    // <React.StrictMode>
     <App/>    
-    </React.StrictMode>,
-    document.getElementById('root')
+    // </React.StrictMode>
 );

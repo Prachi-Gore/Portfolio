@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "vite --mode development",
+    "build": "vite build --mode production",
+    "preview": "vite preview --mode production"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -17,20 +17,24 @@
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.12.2",
     "@popperjs/core": "^2.11.7",
+    "axios": "^1.7.9",
     "babel-plugin-macros": "^3.1.0",
     "bootstrap": "^5.2.3",
     "font-awesome": "^4.7.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
-    "styled-components": "^5.3.10",
+    "react-router-dom": "^7.1.0",
     "vite-plugin-react-icons": "^0.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
     "sass": "^1.62.0",
+    "tailwindcss": "^3.4.17",
     "vite": "^4.1.0"
   }
 }

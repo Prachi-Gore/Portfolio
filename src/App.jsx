@@ -8,12 +8,11 @@ import Education from './Components/Education'
 import Blog from './Components/Blog'
 import Contact from './Components/Contact'
 import Project from './Components/Project'
-import styled from 'styled-components'
 
 
 function App() {
   return(
-   <Container>
+   <div className='w-screen overflow-hidden'>
    <Navbar/>
    <Home/>
    <About/>
@@ -22,16 +21,13 @@ function App() {
    <Project/>
    <Blog/>
    <Contact/>
-   </Container>
+   </div>
     
 
 
   )
 }
-  const Container=styled.div`
-    width:100vw ;
-    overflow: hidden;
-  `;
+ 
 
 
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components';
 import jsLogo from '../assets/js-logo.png'
 import { useState,useEffect,useRef } from 'react';
 
@@ -87,14 +86,14 @@ export default function Navbar() {
     }
   });
   return (
-    <Container>
-<Left>
+    <div className='navbar-container'>
+<div className='navbar-left-container'>
 
-<a href="/" class="logo"><img src={jsLogo} alt="" width="22px" /> Prachi</a>
-</Left>
-<Right>
+<a href="/" className="logo"><img src={jsLogo} alt="" width="22px" className='mr-2' /> Prachi</a>
+</div>
+<div className='navbar-right-container'>
 <nav>
-    <ul >
+    <ul className='flex' >
       
    <li className={activeTab === 'home' ? 'active' : ''}><a href='#home'> Home</a></li>
    <li className={activeTab === 'about' ? 'active' : ''}><a href='#about'> About</a></li>
@@ -105,7 +104,7 @@ export default function Navbar() {
    <li className={activeTab === 'contact' ? 'active' : ''}><a href='#contact'> Contact</a></li>
    </ul>
    </nav>
-   <button className='open' ref={tl} onClick={(e)=>{
+   <button className='open text-[40px] lg:hidden cursor-pointer hover:bg-[#f1eeee] font-normal' ref={tl} onClick={(e)=>{
    // console.log(tl)
    setIsOpen(true)
    setIsClose(false)
@@ -114,7 +113,7 @@ export default function Navbar() {
    }}>≡</button>
    
    <div className='verticalSidebar' ref={verSidebar} >
-   <button className='close' onClick={(e)=>{
+   <button className='close text-[30px] lg:hidden block bg-[#00094b] pl-[120px] text-white hover:bg-[#00094b]' onClick={(e)=>{
     setIsOpen(false)
     setIsClose(true)
     e.preventDefault();
@@ -122,7 +121,7 @@ export default function Navbar() {
     verSidebar.current.style.display='none';
     
    }}>✖</button>
-   <ul >
+   <ul className='flex flex-col' >
       
       <li className={activeTab === 'home' ? 'active' : ''} ><a href='#home'> Home</a></li>
       <li className={activeTab === 'about' ? 'active' : ''} ><a href='#about'> About</a></li>
@@ -135,193 +134,10 @@ export default function Navbar() {
    </div>
    
 
-</Right>
+</div>
 
-    </Container>
+    </div>
   )
   }
 
-const Container=styled.div`
 
-letter-spacing: 0.1ch;
-font-family: 'Oswald', sans-serif;
-font-size: 20px;
-
-display:flex;
-align-items:center;
-//padding-right: 420px;
-padding-left:120px;
-justify-content:space-between;
-height: 60px;
-box-shadow: 0px 0px 5px 2px lightgray;
-margin-bottom:5px;
-position:fixed;
-
-
-z-index: 1000;
-width:100%;
-
-background-color:aliceblue;
-@media screen and (max-width: 996px) {
-  
-  padding-left: 50px;
-  
-  
-  }
-
-
-
-`;
-const Right=styled.div`
-display: flex;
-
-padding-right:120px;
-@media screen and (max-width:950px) {
-  padding-right:60px;
-  
-}
-
-.open,.close{
-      font-size:40px;
-      display:none;
-      cursor: pointer;
-      border: none;
-      background-color: aliceblue;
-      
-
-      :hover{
-        background-color: #f1eeee;
-        
-      }
-      
-      
-    }
-    .open{
-      font-weight: 400;
-      @media screen and (max-width:952px){
-        display: block; 
-      }
-    }
-    .close{
-      display: block;
-      background-color: #00094b;
-      padding-left:120px;
-      color:white;
-      :hover{
-        background-color: #00094b;
-        
-      }
-    }
-nav{
-   
-   
-    ul{
-       display:flex;
-       .active a {
-  color: #fff;
-  background-color: #000;
-  padding: 5px 10px;
-  border-radius: 5px;
- 
-  :hover{
-    color: #fff;
-    border-bottom:none;
-    padding-bottom: none; 
-  }
-}
-        li{
-        margin-right:30px;
-        list-style:none; 
-        padding-right:30px; 
-       
-        @media screen and (max-width:952px){
-        display: none;
-        }
-        
-
-        
-        
-    a{
-        color: black;
-        text-decoration:none;
-        font-weight: 400;
-        :hover{
-        color: blue;
-        border-bottom:2px solid blue;
-        padding-bottom: 5px; 
-    }
-    }
-    }
-    
-    }
-    
-    
-}
-.verticalSidebar{
-  display: none ;
- padding-top:450px;
- background-color: #00094b;
- margin-right:-10px;
- width:180px;
- 
-  ul{
-       display:flex;
-       flex-direction:column;
-       
-       
-       .active a {
-  border-bottom:4px solid blue;
-  background-color: #000;
-  padding: 5px 10px ;
-  border-radius: 5px;
- 
-  :hover{
-    color: #fff;
-    border-bottom:none;
-    padding-bottom: none; 
-  }
-}
-li{
-        
-        list-style:none; 
-       
-        padding-bottom:30px;
-       
-        
-    a{
-        color: white;
-        text-decoration:none;
-        :hover{
-          border-bottom:4px solid blue;
-  background-color: #000;
-  padding: 5px 10px ;
-  border-radius: 5px; 
-    }
-    }
-    }
-    
-        
-    
-    }
-    
-}
-
-`;
-const Left=styled.div`
-
-a{
-display: flex;
-align-items: center;
-text-decoration:none;
-color: black;
-
-img{
-    margin-right:10px;
-}
-}
-:hover{
-    a{
-    color:orange;
-    }
-}
-`;

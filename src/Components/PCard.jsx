@@ -1,143 +1,29 @@
 import React from 'react';
-import styled from 'styled-components';
-import finance_calculator from '../assets/blog_shiny.mp4';
-
-
 
 function PCard({src,name,descr,code,preview}) {
   
   return (
-   
-    <Container>
-   
-    <video    controls  src={src} type="video/mp4"></video>
-    
-     <h2>{name}</h2>
-     <SubContainer className='subcontainer'>
-     <h2>{name}</h2>
-    <p className='descr'>{descr}</p>
-    <div className="buttons">
-    <a target="_blank"href={preview}><Button><i class="fa-regular fa-eye"></i>Preview</Button></a>
-    <a target="_blank"href={code}><Button><i class="fa-solid fa-code"></i>Code</Button></a> 
+    <div className="project-card-container ">
+    <video    controls  src={src} type="video/mp4" className='h-[253px] cursor-pointer'></video>
+     <h2 className='h-[50px] bg-[#f4f411] text-black flex items-center pl-[10px] m-0 font-serif  font-semibold hover-property'>{name}</h2>
+     <div className='project-card-subcontainer'>
+  <h2 className='h-[50px] bg-[#f4f411] text-black flex items-center pl-[10px] m-0 font-serif  font-semibold'>
+{name}
+
+  </h2>
+    <p className='text-black p-[10px] text-[17px] h-[50px]'>{descr}</p>
+    <div className="flex justify-evenly pt-[35px] pb-[25px]">
+    <a target="_blank"href={preview}><button className='button'><i className="fa-regular fa-eye mr-[5px]"></i>Preview</button></a>
+    <a target="_blank"href={code}><button className='button'><i className="fa-solid fa-code mr-[5px]"></i>Code</button></a> 
     </div>
     
-</SubContainer>
-
-
-    
-
-    </Container>
+</div>
+    </div>
     )
   
 }
 
 export default PCard;
-
-const Container=styled.div`
-display: flex;
-flex-direction:column;
-
-
-
-
-
-  
-  
-    
-    
-  
-  video{
-   height:253px;
-    cursor: pointer;
-   
-   
-   
-  
-  }
- 
-
-
-  h2{
-   height: 50px;
-   background-color: #f4f411;
-   color: black;
-   display: flex;
-   align-items: center;
-   padding-left:10px;
-   margin: 0px;
-   font-family:arial;
-   @media screen and (max-width: 1352px){
-   height: 40px;
-  
-  
-  }
-  @media screen and (max-width: 388px) {
-  margin-top: -45px;
-  }
-
-   :hover+.subcontainer{
-    
-    display: block;
-
- }
- 
- 
-   
-   
-   
-
-  }
-  
-
-    
-`;
-const SubContainer=styled.div`
-display: none;
-font-family:arial;
-background-color:white;
-margin-top:-200px;
-height:200px;
-@media screen and (max-width: 1352px){
- margin-top: -180px;
-  
-  
-  }
-:hover{
-  display: block;
-}
-
-
-
-
-
-p{
-  color: black;
-  padding: 10px;
-  font-size:17px;
-  height:50px;
- 
-  
-}
-.buttons{
-  display: flex;
-  justify-content: space-evenly;
-  
-  padding-top:15px ;
-  padding-bottom:25px;
-  i{
-    margin-right:5px;
-  }
-  
-} 
-
-`;
-const Button=styled.button`
-font-size:17px;
-padding: 8px 15px;
-cursor: pointer;
-
-
-`
     
 
 

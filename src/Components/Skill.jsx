@@ -1,119 +1,50 @@
-import React from 'react'
-import styled from 'styled-components';
+import React, { useState,useEffect } from 'react'
 import Card from './Card';
-
-import data from "../skill.json";
+import axios from 'axios';
+import baseUrl from '../constant';
 
 function Skill() {
-   const newArray= data.map((item)=><Card icon={item.icon} name={item.name}/>)
+    const [skill,setSkill]=useState();
+    const [loading,setLoading]=useState(true);
+    useEffect(()=>{
+axios.get(`${baseUrl}skills/`).then(response=>{
+    setSkill(response.data)
+    setLoading(false);
+}).catch(error=>{
+    console.error("skill api error ",error)
+    setLoading(false);
+})
+    },[])
   return (
     <section id='skills'>
 
-   <Container>
-    <p>
-    <img src="https://img.icons8.com/pastel-glyph/64/000000/laptop-coding--v1.png"/>
-    <h1>Skills & <span style={{color:"#ffff00"}}>Hands On</span></h1>
-    </p>
-    <SubContainer>
+   <div className='skill-container'>
+    <div className="flex justify-center items-center text-center mb-0">
+    <img className="inline-block mr-[15px]"  src="https://img.icons8.com/pastel-glyph/64/000000/laptop-coding--v1.png"/>
+    <h1 className="inline-block section-title">Skills & <span className='section-title' style={{color:"#ffff00"}}>Hands On</span></h1>
+    </div>
+    <div className={`skill-subcontainer ${loading?'flex':'skill-subcontainergrid'}`} >
         
-        {newArray}
+        {loading ?
+       <div className="text-center !w-full">
+       <div role="status">
+           <svg aria-hidden="true" className="inline w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+               <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+           </svg>
+           <span className="sr-only">Loading...</span>
+       </div>
+   </div>
+        : skill?.map((item)=><Card icon={item.iconUrl} name={item.name} key={item.id}/>)
+    }
 
 
-    </SubContainer>
+    </div>
 
-   </Container>
+   </div>
     </section>
 
   )
 }
 
 export default Skill;
-
-const Container=styled.div`
-/* background-color: #a4508b;
-background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%); */
- /*#0000cd */
- background-color: #6e72fc;
-background-image: linear-gradient(315deg, #6e72fc 0%, #ad1deb 74%);
-color:white;
-display: flex;
-flex-direction: column;
-margin:auto;
-p{
-   display: flex;
-    // align-items: center;
-     justify-content:center; 
-    text-align:center;
-    margin-bottom:0px;
-    img{
-        display: inline-block;
-       margin-right:15px;
-       
-    }
-    h1{
-        display: inline-block;
-    }
-}
-
-    
-`
-const SubContainer=styled.div`
-margin:50px;
-margin-top:30px;
-padding:50px;
-background-color: #7f53ac;
-background-image: linear-gradient(315deg, #ad1deb 71%,#6e72fc 0%);
-    //background-color: #000080;
-    border-radius:10px;
-    border-bottom-left-radius:0px;
-    display: grid;
-    grid-template-columns:repeat(6,1fr);
-    grid-auto-rows:auto;
-    gap:20px;
-    @media screen and (max-width: 474px) {
-        grid-template-columns:repeat(1,1fr);
-        background-image: linear-gradient(290deg, #ad1deb 81%,#6e72fc 0%);
-        padding-left: 30px;
-        
-        
-        
-  
-  
-}
-    @media screen and (max-width: 568px) and (min-width: 474px){
-        grid-template-columns:repeat(1,1fr);
-        background-image: linear-gradient(290deg, #ad1deb 71%,#6e72fc 0%);
-        
-        padding-left: 120px;
-        
-  
-  
-}
-    @media screen and (max-width: 767px) and (min-width: 568px) {
-        grid-template-columns:repeat(2,1fr);
-        background-image: linear-gradient(305deg, #ad1deb 71%,#6e72fc 0%);
-        
-  
-  
-}
-    @media screen and (max-width: 974px) and (min-width:767px){
-        grid-template-columns:repeat(3,1fr);
-  
-  
-}
-@media screen and (max-width: 1202px) and (min-width: 974px){
-        grid-template-columns:repeat(4,1fr);
-  
-  
-}
-@media screen and (min-width: 1202px) and (max-width:1406px){
-        grid-template-columns:repeat(5,1fr);
-  
-  
-}
-
-
-`
-
-
-

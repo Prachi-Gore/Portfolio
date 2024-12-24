@@ -7,13 +7,13 @@ function About() {
     <section id='about' className='py-[20px] px-[50px] bg-[#dcfedc]'>
         <div className='about-top-container'>
         <img src="https://img.icons8.com/glyph-neue/45/null/user-female-circle.png" className='mr-[3px]'/>
-        <h1 className="mr-[7px] text-2xl font-semibold" color='black'>About </h1>
-        <h1 className="text-2xl font-semibold" style={{color:"#000080"}}> Me</h1>
+        <h1 className="mr-[7px] section-title" color='black'>About </h1>
+        <h1 className="section-title" style={{color:"#000080"}}> Me</h1>
         </div>
         <div className='about-sub-container'>
         <div className='about-left-container'>
           <div>
-          <span>🙏🏻</span>
+          {/* <span>🙏🏻</span> */}
           
           <img src={profilePic} alt="" />
           </div>

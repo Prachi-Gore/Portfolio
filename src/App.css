@@ -20,7 +20,7 @@
     @apply text-[#3D0B45] mr-5 p-2 rounded-full bg-white hover:text-[#ffcc00] hover:bg-[#3D0B45] hover:border-white hover:border-[0.5px]
 }
 .blog-container {
-    @apply pb-[50px] pt-5 bg-[#ffbf00]
+    @apply pb-[30px] pt-5 bg-[#ffbf00]
 }
 .blog-container .header{
     @apply flex items-center justify-center
@@ -42,7 +42,7 @@
     @apply h-full w-[400px] rounded-[5px] 410px:w-[300px]
 }
 .blogright-container {
-    @apply text-[18px] w-[400px];
+    @apply text-[18px] w-[400px] flex flex-col justify-center;
 }
 .blogright-container button {
     @apply px-5 py-2.5 bg-[#0896d8] text-white border-0 outline-none rounded-[3px] mt-5 text-[17px] hover:cursor-pointer hover:bg-[#257ebd]
@@ -122,10 +122,10 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 .project-card-container{
-    @apply flex flex-col  ;
+    @apply flex flex-col;
 }
 .project-card-subcontainer {
-    @apply  font-[Arial] bg-white mt-[-200px] h-[200px] sm:mt-[-180px] hidden hover:block;
+    @apply  font-[Arial] bg-white  h-[200px]  hidden hover:block;
 }
 .hover-property:hover + .project-card-subcontainer{
     @apply block ;
@@ -220,7 +220,7 @@
     @apply pt-[20px] w-[300px] text-[25px];
  }
  .home-container .icon-container a{
-    @apply mr-[20px] p-[10px] rounded-full bg-yellow-400 text-blue-900;
+    @apply mr-[20px] p-[10px] rounded-full bg-[#ffff00] text-blue-900;
   }
  .home-rightcontainer{
     @apply flex items-center justify-center;
@@ -228,3 +228,45 @@
  .home-rightcontainer img{
     @apply h-[300px] mt-[40px] rounded-full transition-transform duration-500 hover:cursor-pointer hover:translate-y-[-20px];
  }
+
+ .slick-slide >div {
+    @apply flex justify-center mb-10 ;
+  }
+  /* each book card should have same height */
+  .slick-track
+  {
+    display: flex !important ;
+    /* column-gap: 20px; */
+   
+    /* background-color: aquamarine; */
+  }
+  .slick-list{
+    @apply !py-6 
+  }
+  .slick-slide
+  {
+    height: inherit !important;
+    /* background-color: brown; */
+  }
+  /* slick arrow,dot color */
+  /* .slick-prev::before, .slick-next::before, .slick-dots li button::before, .slick-dots li.slick-active button::before {
+    color: red !important ;
+  } */
+ 
+.slick-arrow {
+	z-index: 1;
+	/* width: 40px !important;
+	height: 40px !important; */
+}
+
+/* .slick-arrow:before {
+	font-size: 25px !important;
+} */
+.slick-next {
+	right: 5px !important;
+    top:47% !important;
+}
+.slick-prev {
+	left: 5px !important;
+    top:47% !important;
+}

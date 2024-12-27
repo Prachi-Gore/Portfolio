@@ -25,6 +25,8 @@
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
     "react-router-dom": "^7.1.0",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1",
     "vite-plugin-react-icons": "^0.2.0"
   },
   "devDependencies": {

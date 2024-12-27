@@ -1,32 +1,8 @@
-import React, { useState,useEffect } from 'react'
-import Card from './Card';
-import axios from 'axios';
-import baseUrl from '../constant/constant';
+import React from 'react'
 
-function Skill() {
-    const [skill,setSkill]=useState();
-    const [loading,setLoading]=useState(true);
-    useEffect(()=>{
-axios.get(`${baseUrl}skills/`).then(response=>{
-    setSkill(response.data)
-    setLoading(false);
-}).catch(error=>{
-    console.error("skill api error ",error)
-    setLoading(false);
-})
-    },[])
+const loading = () => {
   return (
-    <section id='skills'>
-
-   <div className='skill-container'>
-    <div className="flex justify-center items-center text-center mb-0">
-    <img className="inline-block mr-[15px]"  src="https://img.icons8.com/pastel-glyph/64/000000/laptop-coding--v1.png"/>
-    <h1 className="inline-block section-title">Skills & <span className='section-title' style={{color:"#ffff00"}}>Hands On</span></h1>
-    </div>
-    <div className={`skill-subcontainer ${loading?'flex':'skill-subcontainergrid'}`} >
-        
-        {loading ?
-       <div className="text-center !w-full">
+    <div className="text-center !w-full">
        <div role="status">
            <svg aria-hidden="true" className="inline w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
@@ -35,16 +11,7 @@ axios.get(`${baseUrl}skills/`).then(response=>{
            <span className="sr-only">Loading...</span>
        </div>
    </div>
-        : skill?.map((item)=><Card icon={item.iconUrl} name={item.name} key={item.id}/>)
-    }
-
-
-    </div>
-
-   </div>
-    </section>
-
   )
 }
 
-export default Skill;
+export default loading

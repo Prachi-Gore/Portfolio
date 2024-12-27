@@ -20,15 +20,15 @@ function About() {
         </div>
         <div className='about-right-container'>
             <h2 className="mb-[3px] 868px:pl-[152px]  font-semibold font-mono">I'm Prachi</h2>
-            <small className="text-[#000080] text-[16px] font-semibold font-mono">Frontend Developer</small>
+            <small className="text-[#000080] text-[16px] font-semibold font-mono">Full Stack Developer</small>
             <p>
-            I am a Frontend developer based in Mumbai, India. I am Statistics Postgraduate from KBCNMU, Jalgaon. I am very passionate about programming & developing websites. I build WebApps and shiny dashboard. currently Working on my skills. I would Love to collaborate to build Statistical Software. 
+            I am a Django Full Stack developer based in Mumbai, India. I am Statistics Postgraduate from KBCNMU, Jalgaon. I am very passionate about programming & developing websites. I build WebApps and shiny dashboard. currently Working on my skills. I would Love to collaborate to build Statistical Software. 
             </p>
-            <p style={{fontFamily:"sans-serif"}} ><span style={{color:"blue",margindiv:"4px" }}>Email:</span>prachigore408@gmail.com</p>
-            <p style={{fontFamily:"sans-serif"}}><span style={{color:"blue",marginRight:"4px" }}>Place:</span>Mumbai, India</p>
+            <p style={{fontFamily:"serif"}} ><span style={{color:"blue",margindiv:"4px" }}>Email: </span>prachigore408@gmail.com</p>
+            <p style={{fontFamily:"serif"}}><span style={{color:"blue",marginRight:"4px" }}>Place: </span>Mumbai, India</p>
             <div className='resume-container'>
               
-              <span className="mr-[20px] text-[20px] text-red-500">Resume </span>
+              <span className="mr-[20px] text-[20px] text-red-500 font-serif">Resume </span>
               {/* <i className="fa-regular fa-greater-than"></i> */}
              
               <div className='flex flex-row gap-x-6'>

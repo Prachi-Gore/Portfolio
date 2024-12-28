@@ -102,7 +102,7 @@
 }
 .skill-container{
     @apply bg-[#6e72fc] bg-gradient-to-br from-[#6e72fc] to-[#ad1deb]
-    text-white flex flex-col mx-auto py-4;
+    text-white flex flex-col mx-auto pt-4;
 }
 .skill-subcontainer{
     @apply  m-[50px] mt-[30px] p-[50px] bg-[#7f53ac] bg-gradient-to-br from-[#ad1deb] to-[#6e72fc] 
@@ -207,7 +207,7 @@
  .navbar-right-container .verticalSidebar ul .active a{
     @apply text-white bg-black border-b-4 border-blue-500  py-[5px] px-[10px] rounded-[5px];
  }
- .navbar-left-container .logo{
+ .navbar-left-container{
     @apply flex items-center text-black no-underline hover:text-orange-500;
  }
  .home-container{

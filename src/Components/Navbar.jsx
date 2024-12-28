@@ -1,5 +1,5 @@
 import React from 'react'
-import jsLogo from '../assets/js-logo.png'
+import jsLogo from '../assets/drf-logo.png'
 import { useState,useEffect,useRef } from 'react';
 
 
@@ -89,7 +89,7 @@ export default function Navbar() {
     <div className='navbar-container'>
 <div className='navbar-left-container'>
 
-<a href="/" className="logo"><img src={jsLogo} alt="" width="22px" className='mr-2' /> Prachi</a>
+<img width="34"  src="https://img.icons8.com/material-two-tone/24/api-settings.png" alt="api-settings" className='mr-2'/> Prachi
 </div>
 <div className='navbar-right-container'>
 <nav>

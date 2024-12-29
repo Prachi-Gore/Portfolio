@@ -228,7 +228,17 @@
  .home-rightcontainer img{
     @apply h-[300px] mt-[40px] rounded-full transition-transform duration-500 hover:cursor-pointer hover:translate-y-[-20px];
  }
-
+.experience-container {
+    background: linear-gradient(#1a191d 30%,#1d1f35 150%);
+    @apply py-5 ;
+}
+.experience-container .experience-collapse:hover{
+    background-color: #740cdc;
+}
+.experience-container .experience-collapse{
+    background: rgba(73,12,134,.8705882353);
+    @apply border-none w-3/4 flex flex-col justify-center;
+}
  .slick-slide >div {
     @apply flex justify-center mb-10 ;
   }

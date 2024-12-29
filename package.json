@@ -9,6 +9,7 @@
     "preview": "vite preview --mode production"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.5.2",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.10.8",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -17,6 +18,7 @@
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.12.2",
     "@popperjs/core": "^2.11.7",
+    "antd": "^5.22.7",
     "axios": "^1.7.9",
     "babel-plugin-macros": "^3.1.0",
     "bootstrap": "^5.2.3",

@@ -1,5 +1,4 @@
 import React from 'react'
-import jsLogo from '../assets/drf-logo.png'
 import { useState,useEffect,useRef } from 'react';
 
 
@@ -16,6 +15,7 @@ export default function Navbar() {
       const projectSection = document.getElementById('project');
       const blogSection = document.getElementById('blog');
       const contactSection = document.getElementById('contact');
+      const experienceSection = document.getElementById('experience');
       
       const homeTop = homeSection.offsetTop;
       const aboutTop = aboutSection.offsetTop;
@@ -24,16 +24,19 @@ export default function Navbar() {
       const projectTop = projectSection.offsetTop;
       const blogTop = blogSection.offsetTop;
       const contactTop = contactSection.offsetTop;
-      
+      const experienceTop = experienceSection.offsetTop;
+
       const scrollPosition = window.scrollY+300;
       
       if (scrollPosition < aboutTop) {
         
         setActiveTab('home');
-      } else if (scrollPosition >= aboutTop && scrollPosition < skillsTop) {
+      } else if (scrollPosition >= aboutTop && scrollPosition < experienceTop) {
         
         setActiveTab('about');
-      } else if (scrollPosition >= skillsTop && scrollPosition < educationTop) {
+      }else if (scrollPosition >= experienceTop && scrollPosition < skillsTop) {
+        setActiveTab('experience');
+      }  else if (scrollPosition >= skillsTop && scrollPosition < educationTop) {
         
         setActiveTab('skills');
       } else if (scrollPosition >= educationTop && scrollPosition < projectTop) {
@@ -97,6 +100,7 @@ export default function Navbar() {
       
    <li className={activeTab === 'home' ? 'active' : ''}><a href='#home'> Home</a></li>
    <li className={activeTab === 'about' ? 'active' : ''}><a href='#about'> About</a></li>
+   <li className={activeTab === 'experience' ? 'active' : ''}><a href='#experience'> Experience</a></li>
    <li className={activeTab === 'skills' ? 'active' : ''}> <a href='#skills'>  Skills</a></li>
    <li className={activeTab === 'education' ? 'active' : ''}><a href='#education'> Education</a></li>
    <li className={activeTab === 'project' ? 'active' : ''}><a href='#project'> Project</a></li>
@@ -125,6 +129,7 @@ export default function Navbar() {
       
       <li className={activeTab === 'home' ? 'active' : ''} ><a href='#home'> Home</a></li>
       <li className={activeTab === 'about' ? 'active' : ''} ><a href='#about'> About</a></li>
+      <li className={activeTab === 'experience' ? 'active' : ''} ><a href='#experience'> Experience</a></li>
       <li className={activeTab === 'skills' ? 'active' : ''} > <a href='#skills'>  Skills</a></li>
       <li className={activeTab === 'education' ? 'active' : ''} ><a href='#education'> Education</a></li>
       <li className={activeTab === 'project' ? 'active' : ''} ><a href='#project'> Project</a></li>

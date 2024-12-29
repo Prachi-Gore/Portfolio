@@ -16,7 +16,7 @@ function Education() {
         <h1 className='inline-block section-title'>My <span className="text-[#ba41ba] section-title">Education</span></h1>
         
         </div>
-        <q className='education-quote'>for me the purpose of education is not just to get a degree but the time given by parents to explore different domains and find our passion.</q>
+        <q className='education-quote'>Learning how to think is the essence of education.</q>
         <div className='education-subcontainer'>
         
         <ECard image={nmu} degree="Master of Science in Statistics" name="Kavayitri Bahinabai Chaudhari North Maharashtra University, Jalgaon" descr="2021-2023 | Completed | 73.33% "/>  

@@ -8,6 +8,7 @@ import Education from './Components/Education'
 import Blog from './Components/Blog'
 import Contact from './Components/Contact'
 import Project from './Components/Project'
+import Experience from './Components/experience'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
    <Navbar/>
    <Home/>
    <About/>
+   <Experience />
    <Skill/>
    <Education/>
    <Project/>

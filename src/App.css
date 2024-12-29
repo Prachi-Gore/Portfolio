@@ -156,7 +156,7 @@
     @apply relative;
 }
 .about-left-container div{
-    @apply bg-black p-[7px] rounded-[15px] h-[300px] w-[280px] relative hover:bg-[#ff1a1a] hover:bg-gradient-to-r hover:from-[#ff1a1a] hover:to-[#ffff00] hover:p-0;
+    @apply p-[7px] rounded-[15px] h-[300px] w-[280px] relative hover:bg-[#ff1a1a] hover:bg-gradient-to-r hover:from-[#ff1a1a] hover:to-[#ffff00] hover:p-0;
  }
  .about-left-container div span{
     @apply absolute top-[130px] left-[30px] text-[35px] hidden group-hover:inline;

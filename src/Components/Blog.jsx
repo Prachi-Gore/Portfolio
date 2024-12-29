@@ -6,10 +6,10 @@ function Blog() {
     <section id='blog'>
 
     <div className='blog-container'>
-      <p className='header'>
+      <div className='header'>
       <i className="fa-solid fa-newspaper"></i>
       <h1 className='section-title'>Blog</h1>
-      </p>
+      </div>
       <div className='blog-subcontainer'>
  <div className='blogleft-container'>
   <img src={blog} alt="" />

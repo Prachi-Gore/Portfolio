@@ -5,8 +5,8 @@ import baseUrl from '../constant/constant';
 import Loading from '../common/loading';
 
 function Skill() {
-    const [skill,setSkill]=useState();
-    const [loading,setLoading]=useState(true);
+  const [loading,setLoading]=useState(true);
+    const [skill,setSkill]=useState();  
     useEffect(()=>{
 axios.get(`${baseUrl}skills/`).then(response=>{
     setSkill(response.data)

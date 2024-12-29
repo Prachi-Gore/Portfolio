@@ -1,13 +1,29 @@
 import React from 'react'
 import { Collapse } from 'antd';
 import {PlusCircleTwoTone,MinusCircleTwoTone} from '@ant-design/icons'
+import firstCompanyLogo from '../assets/first-company-logo.png'
 
 const Experience = () => {
   const items = [
     {
       key: '1',
-      label: 'Frontend Developer @ Osian Infotech',
-      children: <p>joi</p>,
+      label: 'Frontend Developer @ Osian',
+      children: <div className='collapse-item-container'>
+        <div className='flex justify-between gap-x-5 items-center'>
+          <a className="company-logo" href='https://osiansoftware.com/'>
+            <img alt='osian logo'src={firstCompanyLogo} className=' w-[450px]' />
+          </a>
+          <div className="work-description">
+          I work as a React Refine frontend developer. My daily responsibilities include creating dynamic and reusable components, ensuring smooth navigation between components, and integrating APIs with POST, PUT, and GET calls. I use Tailwind CSS and Ant Design to design user-friendly interfaces and collaborate using Git for version control. My focus is on delivering seamless and efficient user experiences.
+          </div>
+        </div>
+        <div className='flex flex-wrap gap-4'>
+{
+  ['Javascript','Typescript','Refine','ant design','Tailwind'].map((item,index)=><p key={index} className='skill-item'>{item}</p>)
+}
+        </div>
+      </div>,
+      extra:<div className='text-white text-base font-semibold'>Nov 2023 - Present</div>
     },]
   return (
 <section id='experience'>
@@ -17,9 +33,11 @@ const Experience = () => {
     <i className="fa-solid fa-suitcase inline-block mr-[15px]  text-[48px]"></i>
     <h1 className='inline-block section-title '>Experience</h1>
     </div>
-<Collapse accordion items={items} expandIconPosition='end' className='experience-collapse text-white'
-expandIcon={({ isActive }) => isActive ? <MinusCircleTwoTone style={{ fontSize: '32px'}} /> :<PlusCircleTwoTone style={{ fontSize: '32px'}}/> }
+    <div className='collapsecontainer'>
+<Collapse accordion defaultActiveKey={['1']} items={items} expandIconPosition='end' className='experience-collapse'
+expandIcon={({ isActive }) => isActive ? <MinusCircleTwoTone style={{ fontSize: '28px'}} twoToneColor='#7257da' /> :<PlusCircleTwoTone style={{ fontSize: '28px'}} twoToneColor='#7257da'/> }
 />
+</div>
 </div>
 </section>
   )

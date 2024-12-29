@@ -195,7 +195,7 @@
     @apply text-white bg-black p-[5px_10px] rounded-[5px] hover:text-white hover:border-b-0;
  }
  .navbar-right-container .verticalSidebar{
-    @apply lg:hidden block pt-[410px] bg-[#00094b] -mr-[50px] w-[180px] pl-[10px];
+    @apply lg:hidden block pt-[480px] bg-[#00094b] -mr-[50px] w-[180px] pl-[10px];
  }
  .navbar-right-container .verticalSidebar ul li{
     @apply pb-[30px];
@@ -230,14 +230,34 @@
  }
 .experience-container {
     background: linear-gradient(#1a191d 30%,#1d1f35 150%);
-    @apply py-5 ;
+    @apply pt-5 pb-7 ;
 }
 .experience-container .experience-collapse:hover{
     background-color: #740cdc;
 }
+.experience-container .experience-collapse .ant-collapse-header-text{
+    @apply text-white text-base font-semibold;
+}
+.experience-container .experience-collapse .ant-collapse-content{
+@apply border-none text-white ;
+background: #241d41;
+}
+.experience-container .experience-collapse .collapse-item-container{
+    @apply flex flex-col gap-y-4;
+}
+.experience-container .experience-collapse .collapse-item-container .work-description {
+    @apply text-[#ffffffcf] text-wrap text-base;
+}
+.experience-container .experience-collapse .collapse-item-container .skill-item{
+    @apply px-2 py-1 rounded-lg font-mono w-fit  ;
+    background: #2c3599;
+}
 .experience-container .experience-collapse{
     background: rgba(73,12,134,.8705882353);
-    @apply border-none w-3/4 flex flex-col justify-center;
+    @apply border-none w-3/4 ;
+}
+.experience-container .collapsecontainer{
+    @apply flex flex-col items-center ;
 }
  .slick-slide >div {
     @apply flex justify-center mb-10 ;

@@ -163,7 +163,7 @@ const data=[
 ]
 const settings=sliderSettings(data)
 function Project() {
-  const [loading,setLoading]=useState(true);
+  const [loading,setLoading]=useState(false);
   return (
     <section id='project'>
 

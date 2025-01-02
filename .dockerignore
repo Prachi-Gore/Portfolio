@@ -1,0 +1,9 @@
+node_modules
+node_modules/*
+npm-debug.log
+logs/
+.git
+*.md
+.cache
+.gitignore
+README.md

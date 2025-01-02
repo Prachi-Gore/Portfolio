@@ -1,0 +1,17 @@
+services:
+    react-project-dev:
+      container_name: react-portfolio-container_name
+      image: react-portfolio-dev-image
+      build:
+         context: .
+         dockerfile: Dockerfile.dev
+      ports:
+        - "5173:5173" # on which host you want to run project:default host
+      volumes:
+        - .:/portfolio # copy all content from current working directory into portfolio folder
+        - /portfolio/node_modules # exclude node_modules as it is different for windows and linux and docker uses linux node module inside container is different than node module inside current working directory
+      command: npm run dev
+
+# to make img container volume run command:docker compose -f docker-compose.dev.yml up -d
+
+# to display the status of the services: docker compose -f docker-compose.dev.yml ps      

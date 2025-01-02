@@ -1,0 +1,23 @@
+# this is img and whatever inside dockerignore file will not move in this img and will be availble in volume
+
+# use the official Node.js image as the base image
+FROM node:18.17-slim As development
+
+# Set the working directory inside the container 
+WORKDIR /portfolio
+
+# Copy package.json to the container  # here . represent current working directory
+COPY package.json .
+
+# Install dependencies
+RUN npm install
+
+# Copying all the files in our project # COPY all files (first dot) inside current wd(portfolio folder)(second dot) 
+COPY . .
+
+# Expose port 5173 for development server(not really necessary) # inside container you can run on this
+EXPOSE 5173 
+
+# Start the React dev server with hot-reloading
+CMD ["npm","run","dev"]
+

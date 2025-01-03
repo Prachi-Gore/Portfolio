@@ -8,7 +8,7 @@ import Education from './Components/Education'
 import Blog from './Components/Blog'
 import Contact from './Components/Contact'
 import Project from './Components/Project'
-import Experience from './Components/experience'
+import Experience from './Components/Experience'
 
 
 function App() {

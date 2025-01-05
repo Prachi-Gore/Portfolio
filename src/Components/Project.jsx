@@ -214,7 +214,7 @@ axios.get(`${baseUrl}projects/`).then(response=>{
     />
     </div>
    {loading?   <Loading /> : project?.length>0 && <Slider {...settings} className="">
-     {project.map((item,index)=><PCard src={`../assets/${item.src}.mp4`} name={item.name} descr={item.descr} preview={item.preview} code={item.code} key={index}></PCard>)}
+     {project.map((item,index)=><PCard src={`../assets/${item.video_name}.mp4`} name={item.name} descr={item.descr} preview={item.preview} code={item.code} key={index}></PCard>)}
      </Slider>}
    
      

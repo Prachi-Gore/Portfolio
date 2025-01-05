@@ -117,7 +117,7 @@ export default function Navbar() {
    }}>≡</button>
    
    <div className='verticalSidebar' ref={verSidebar} >
-   <button className='close text-[30px] lg:hidden block bg-[#00094b] pl-[120px] text-white hover:bg-[#00094b]' onClick={(e)=>{
+   <button className='close text-[30px] lg:hidden bg-[#00094b] pl-[120px] text-white hover:bg-[#00094b]' onClick={(e)=>{
     setIsOpen(false)
     setIsClose(true)
     e.preventDefault();

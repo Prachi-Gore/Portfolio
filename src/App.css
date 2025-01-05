@@ -195,7 +195,7 @@
     @apply text-white bg-black p-[5px_10px] rounded-[5px] hover:text-white hover:border-b-0;
  }
  .navbar-right-container .verticalSidebar{
-    @apply lg:hidden block pt-[480px] bg-[#00094b] -mr-[50px] w-[180px] pl-[10px];
+    @apply lg:hidden pt-[480px] bg-[#00094b] -mr-[50px] w-[180px] pl-[10px];
  }
  .navbar-right-container .verticalSidebar ul li{
     @apply pb-[30px];

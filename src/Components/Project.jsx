@@ -9,7 +9,6 @@ import Loading from '../common/loading';
 import React from 'react'
 import PCard from './PCard'
 //import data from './project.json'
-
 import { Select } from 'antd';
 import axios from 'axios';
 import baseUrl from '../constant/constant';
@@ -20,10 +19,10 @@ import baseUrl from '../constant/constant';
 
 function Project() {
   const [loading,setLoading]=useState(true);
+  const [settings,setSettings]=useState({});
   const [skillLoading,setSkillLoading]=useState(true);
   const [skill,setSkill]=useState([]);  
   const [project,setProject]=useState([]);
-  let settings={};
   function handleChange(value){
     console.log("selecred skill from dropdown ",value)
   }
@@ -38,8 +37,7 @@ axios.get(`${baseUrl}skills/`).then(response=>{
 // project api
 axios.get(`${baseUrl}projects/`).then(response=>{
   setProject(response.data)
-  settings=sliderSettings(response.data)
-  console.log('settings ',settings)
+  setSettings(sliderSettings(response.data))
   setLoading(false);
 }).catch(error=>{
   console.error("project list api error ",error)
@@ -70,8 +68,8 @@ axios.get(`${baseUrl}projects/`).then(response=>{
       size='large'
     />
     </div>
-   {loading?   <Loading /> : project?.length>0 && <Slider {...settings} className="" key={settings?.slidesToShow}>
-     {project.map((item,index)=><PCard src={`/${item.video_name}.mp4`} name={item.name} descr={item.descr} preview={item.preview} code={item.code} key={index}></PCard>)}
+   {loading?   <Loading /> : project?.length>0 && <Slider {...settings} className="">
+     {project.map((item,index)=><PCard src={`/${item.video_name}.mp4`} name={item.name} descr={item.description} preview={item.preview} code={item.code} key={index}></PCard>)}
      </Slider>}
    
      

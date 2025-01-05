@@ -7,7 +7,7 @@ function PCard({src,name,descr,code,preview}) {
     <div className="project-card-container relative">
     <video    controls  src={src} type="video/mp4" className='h-[253px] cursor-pointer'></video>
      <h2 className='h-[50px] bg-[#f4f411] text-black flex items-center pl-[10px] m-0 font-serif  font-semibold hover-property'>{name}</h2>
-     <div className='project-card-subcontainer absolute bottom-0 w-full'>
+     <div className='project-card-subcontainer'>
        <h2 className='h-[50px] bg-[#f4f411] text-black flex items-center pl-[10px] m-0 font-serif font-semibold'>
      {name}
      

@@ -125,7 +125,7 @@
     @apply flex flex-col;
 }
 .project-card-subcontainer {
-    @apply  font-[Arial] bg-white  h-[200px]  hidden hover:block;
+    @apply  font-[Arial] bg-white  h-[200px]  hidden hover:block absolute bottom-0 w-full ;
 }
 .hover-property:hover + .project-card-subcontainer{
     @apply block ;

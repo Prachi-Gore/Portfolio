@@ -166,9 +166,10 @@ const data=[
 ]
 const settings=sliderSettings(data)
 function Project() {
-  const [loading,setLoading]=useState(false);
+  const [loading,setLoading]=useState(true);
   const [skillLoading,setSkillLoading]=useState(true);
   const [skill,setSkill]=useState([]);  
+  const [project,setProject]=useState([]);
   function handleChange(value){
     console.log("selecred skill from dropdown ",value)
   }
@@ -179,6 +180,14 @@ axios.get(`${baseUrl}skills/`).then(response=>{
 }).catch(error=>{
   console.error("skill option list api error ",error)
   setSkillLoading(false);
+})
+// project api
+axios.get(`${baseUrl}projects/`).then(response=>{
+  setProject(response.data)
+  setLoading(false);
+}).catch(error=>{
+  console.error("project list api error ",error)
+  setLoading(false);
 })
   },[]) 
    return (
@@ -204,8 +213,8 @@ axios.get(`${baseUrl}skills/`).then(response=>{
       size='large'
     />
     </div>
-   {loading?   <Loading /> : data?.length>0 && <Slider {...settings} className="">
-     {data.map((item,index)=><PCard src={item.src} name={item.name} descr={item.descr} preview={item.preview} code={item.code} key={index}></PCard>)}
+   {loading?   <Loading /> : project?.length>0 && <Slider {...settings} className="">
+     {project.map((item,index)=><PCard src={item.src} name={item.name} descr={item.descr} preview={item.preview} code={item.code} key={index}></PCard>)}
      </Slider>}
    
      

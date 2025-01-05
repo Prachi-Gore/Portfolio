@@ -193,7 +193,7 @@ axios.get(`${baseUrl}projects/`).then(response=>{
    return (
     <section id='project'>
 
-    <div className='project-container min-h-32'>
+    <div className='project-container min-h-44'>
     <div className='flex items-center justify-center m-0'>
     
     <i className="fa-solid fa-laptop-code inline-block mr-[15px] text-white text-[48px]"></i>
@@ -214,7 +214,7 @@ axios.get(`${baseUrl}projects/`).then(response=>{
     />
     </div>
    {loading?   <Loading /> : project?.length>0 && <Slider {...settings} className="">
-     {project.map((item,index)=><PCard src={item.src} name={item.name} descr={item.descr} preview={item.preview} code={item.code} key={index}></PCard>)}
+     {project.map((item,index)=><PCard src={`../assets/${item.src}.mp4`} name={item.name} descr={item.descr} preview={item.preview} code={item.code} key={index}></PCard>)}
      </Slider>}
    
      

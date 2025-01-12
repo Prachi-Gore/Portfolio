@@ -6,19 +6,19 @@
     infinite: false,
     speed: 500,
     slidesToShow:data?.length>=3?3:data?.length,
-    slidesToScroll: 3,
-    rows: 2,
+    slidesToScroll: data?.length>3?3:1,
+    rows: data?.length>3?2:1,
     className: "center",
         centerPadding: "10px",
     // adaptiveHeight: true,
-      centerMode: data?.length===1,
+      // centerMode: data?.length===1,
       // variableWidth: true,
     responsive: [
       {
         breakpoint: 1300,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: data?.length>2?2:1,
           infinite: false,
           // dots: true,
           initialSlide: 2

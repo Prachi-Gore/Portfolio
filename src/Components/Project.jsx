@@ -25,6 +25,17 @@ function Project() {
   const [project,setProject]=useState([]);
   function handleChange(value){
     console.log("selecred skill from dropdown ",value)
+    // make api call to filter
+    setLoading(true);
+    axios.get(value?.length>0?`${baseUrl}projects/?skills=${value.join(',')}`:`${baseUrl}projects/`).then(response=>{
+      setProject(response.data)
+      setSettings(sliderSettings(response.data))
+      setLoading(false);
+    }).catch(error=>{
+      console.error("project list api error ",error)
+      setLoading(false);
+    })
+
   }
   useEffect(()=>{
 axios.get(`${baseUrl}skills/`).then(response=>{
@@ -58,14 +69,22 @@ axios.get(`${baseUrl}projects/`).then(response=>{
     <Select
       mode="multiple"
       allowClear
+      showSearch
       // style={{ width: '100%' }}
       placeholder="Please select skill"
       onChange={handleChange}
-      options={skill?.map(item=>({label:item?.name,value:item?.name}))||[]}
+      options={skill?.map(item=>({label:item?.name,value:item?.id}))||[]}
       loading={skillLoading}
       className='w-96'
       placement='bottomLeft'
       size='large'
+      optionFilterProp="label"
+      filterOption={(input, option) =>{
+        // console.log('option ',option,'input ',input)
+        return option.label.toLowerCase().indexOf(input.toLowerCase()) >= 0
+
+      }
+      }
     />
     </div>
    {loading?   <Loading /> : project?.length>0 && <Slider {...settings} className="">

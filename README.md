@@ -6,8 +6,9 @@
  </p>
 <h3>Tech Stack Used</h3>
  <ul>
- <li>HTML</li>
- <li>CSS</li>
+  <li>Django</li>
+  <li>DRF</li>
+ <li>Tailwind CSS</li>
  <li>ReactJS</li>
  </ul>
  

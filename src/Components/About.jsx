@@ -32,7 +32,7 @@ function About() {
               {/* <i className="fa-regular fa-greater-than"></i> */}
              
               <div className='flex flex-row gap-x-6'>
-             <a href='https://drive.google.com/file/d/14_SFNx8NahTr5AbPd-KFNE5X1TQwAQGZ/view'target='_blank' download> <button>ReactJS Developer</button> </a>
+             <a href='https://drive.google.com/file/d/1klxXguPOaPFKgxzG6-DdYMFfFyOooZfK/view'target='_blank' download> <button>Django FullStack Developer</button> </a>
              <a href="https://drive.google.com/file/d/1HMNKdMVNLuQUqsekxjcd50idUmufmJ2R/view"target='_blank' download> <button>R Shiny Developer</button></a>
              </div>
 

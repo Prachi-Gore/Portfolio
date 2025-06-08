@@ -7,19 +7,20 @@ const Experience = () => {
   const items = [
     {
       key: '1',
-      label: 'Frontend Developer @ Osian',
+      label: 'Software Developer @ Osian',
       children: <div className='collapse-item-container'>
         <div className='flex justify-between gap-x-5 items-center'>
           <a className="company-logo" href='https://osiansoftware.com/'>
             <img alt='osian logo'src={firstCompanyLogo} className=' w-[450px]' />
           </a>
           <div className="work-description">
-          I work as a React Refine frontend developer. My daily responsibilities include creating dynamic and reusable components, ensuring smooth navigation between components, and integrating APIs with POST, PUT, and GET calls. I use Tailwind CSS and Ant Design to design user-friendly interfaces and collaborate using Git for version control. My focus is on delivering seamless and efficient user experiences.
+          {/* I work as a software developer. My daily responsibilities include creating dynamic and reusable components, ensuring smooth navigation between components, and integrating APIs with POST, PUT, and GET calls. I use Tailwind CSS and Ant Design to design user-friendly interfaces and collaborate using Git for version control. My focus is on delivering seamless and efficient user experiences. */}
+          Worked as a Full Stack Developer building web applications using Django for backend and React.js for frontend. Created and integrated REST APIs to manage user data, forms, and dashboard features. Handled database models, views, and serializers while ensuring smooth communication with the frontend through API endpoints. Collaborated with the team to implement responsive UI, perform testing, and debug issues during development.
           </div>
         </div>
         <div className='flex flex-wrap gap-4'>
 {
-  ['Javascript','Typescript','Refine','ant design','Tailwind'].map((item,index)=><p key={index} className='skill-item'>{item}</p>)
+  ['Javascript','Python','Django','MySql','Typescript','Refine','ant design','Tailwind'].map((item,index)=><p key={index} className='skill-item'>{item}</p>)
 }
         </div>
       </div>,

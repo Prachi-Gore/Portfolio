@@ -22,7 +22,8 @@ function About() {
             <h2 className="mb-[3px] 868px:pl-[152px]  font-semibold font-mono">I'm Prachi</h2>
             <small className="text-[#000080] text-[16px] font-semibold font-mono">Full Stack Developer</small>
             <p>
-            I am a Django Full Stack developer based in Mumbai, India. I am Statistics Postgraduate from KBCNMU, Jalgaon. I am very passionate about programming & developing websites. I build WebApps and shiny dashboard. currently Working on my skills. I would Love to collaborate to build Statistical Software. 
+            {/* I am a Django Full Stack developer based in Mumbai, India. I am Statistics Postgraduate from KBCNMU, Jalgaon. I am very passionate about programming & developing websites. I build WebApps and shiny dashboard. currently Working on my skills. I would Love to collaborate to build Statistical Software.  */}
+            I am a Python web developer skilled in building scalable and secure web applications using Django and Django REST Framework. I’ve worked on full-stack projects that integrate modern frontend technologies like React.js and Tailwind CSS with robust backend systems, JWT authentication, WebSockets for real-time communication, and Celery for asynchronous tasks. I focus on writing clean, maintainable code and delivering features that solve real-world problems effectively.
             </p>
             <p style={{fontFamily:"serif"}} ><span style={{color:"blue",margindiv:"4px" }}>Email: </span>prachigore408@gmail.com</p>
             <p style={{fontFamily:"serif"}}><span style={{color:"blue",marginRight:"4px" }}>Place: </span>Mumbai, India</p>
@@ -32,7 +33,7 @@ function About() {
               {/* <i className="fa-regular fa-greater-than"></i> */}
              
               <div className='flex flex-row gap-x-6'>
-             <a href='https://drive.google.com/file/d/1klxXguPOaPFKgxzG6-DdYMFfFyOooZfK/view'target='_blank' download> <button>Django FullStack Developer</button> </a>
+             <a href='https://drive.google.com/file/d/1klxXguPOaPFKgxzG6-DdYMFfFyOooZfK/view'target='_blank' download> <button>Python Web Developer</button> </a>
              <a href="https://drive.google.com/file/d/1HMNKdMVNLuQUqsekxjcd50idUmufmJ2R/view"target='_blank' download> <button>R Shiny Developer</button></a>
              </div>
 
